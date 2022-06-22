@@ -1,7 +1,7 @@
 /*
- * @Author: web.王晓冬
+* @Author : web. Wang Xiaodong
  * @Date: 2021-08-25 11:19:35
- * @LastEditors: web.王晓冬
+* @LastEditors : web. Wang Xiaodong
  * @LastEditTime: 2021-09-02 16:03:36
  * @Description: file content
  */
@@ -27,25 +27,25 @@ export const defineProps = {
     width: { type: String, default: '800px' },
     height: { type: String, default: '450px' },
     color: { type: String, default: '#409eff' },
-    src: { required: true, type: String, default: '' }, //视频源
-    title: { type: String, default: '' }, //视频名称
-    type: { type: String, default: 'video/mp4' }, //视频类型
-    poster: { type: String, default: '' },//封面
-    webFullScreen: { type: Boolean, default: false },//网页全屏
-    speed: { type: Boolean, default: true },//是否支持快进快退 //移动端不支持
-    currentTime: { type: Number, default: 0 }, //当前播放时间
-    playsinline: { type: Boolean, default: false },//ios端 点击播放是否全屏
-    muted: { type: Boolean, default: false }, //静音
-    speedRate: { type: Array, default: () => ["2.0", "1.5", "1.25", "1.0", "0.75", "0.5",] }, //播放倍速
-    autoPlay: { type: Boolean, default: false }, //自动播放
-    loop: { type: Boolean, default: false }, //循环播放
-    mirror: { type: Boolean, default: false }, //镜像画面
-    ligthOff: { type: Boolean, default: false },  //关灯模式
-    volume: { type: [String, Number], default: 0.3 }, //默认音量大小
-    control: { type: Boolean, default: true }, //是否显示控制器
+    src : {  required : true ,  type : String ,  default : ''  } ,  // video source
+    title : {  type : String ,  default : ''  } ,  // video name
+    type : {  type : String ,  default : 'video/mp4'  } ,  // video type
+    poster : {  type : String ,  default : ''  } , //cover
+    webFullScreen : {  type : Boolean ,  default : false  } , //Webpage full screen
+    speed : {  type : Boolean ,  default : true  } , //Whether fast forward and fast backward are supported//The mobile terminal does not support
+    currentTime : {  type : Number ,  default : 0  } ,  //current playback time
+    playsinline : {  type : Boolean ,  default : false  } , //whether click to play on the ios side is full screen
+    muted : {  type : Boolean ,  default : false  } ,  // Quiet
+    speedRate: { type: Array, default: () => ["2.0", "1.5", "1.25", "1.0", "0.75", "0.5",] }, //Play double speed
+    autoPlay : {  type : Boolean ,  default : false  } ,  //autoplay
+    loop : {  type : Boolean ,  default : false  } ,  // loop playback
+    mirror : {  type : Boolean ,  default : false  } ,  //Mirror screen
+    ligthOff : {  type : Boolean ,  default : false  } ,   //light off mode
+    volume : {  type : [ String ,  Number ] ,  default : 0.3  } ,  //default volume size
+    control : {  type : Boolean ,  default : true  } ,  //whether to display the controller
     controlBtns: {
         type: Array as PropType<Array<string>>,
         default: ['audioTrack', 'quality', 'speedRate', 'volume', 'setting', 'pip', 'pageFullScreen', 'fullScreen']
-    }, //是否显示控制器
-    preload: { type: String, default: 'auto' }, //预加载 
+    } ,  //whether to display the controller
+    preload : {  type : String ,  default : 'auto'  } ,  //preload
 }
