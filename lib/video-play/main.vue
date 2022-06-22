@@ -135,7 +135,7 @@
           </div>
           <!-- Double speed playback -->
           <div class="d-tool-item speedRate-btn" v-if="props.controlBtns.includes('speedRate')">
-            {{ state.speedActive == "1.0" ? "倍速" : state.speedActive + "x" }}
+            {{ state.speedActive == "1.0" ? "double speed" : state.speedActive + "x" }}
             <div class="d-tool-item-main">
               <ul class="speed-main">
                 <li
@@ -218,7 +218,7 @@
             v-if="props.controlBtns.includes('fullScreen')"
             @click="toggleFullScreenHandle"
           >
-            <div class="d-tool-item-main">全屏</div>
+            <div class="d-tool-item-main">full screen</div>
             <d-icon size="20" icon="icon-screen"></d-icon>
           </div>
         </div>
